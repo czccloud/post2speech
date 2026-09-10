@@ -1,13 +1,14 @@
 # 校准记录 cal-YYYYMMDD-NN
 
 - 日期：YYYY-MM-DD
-- SKILL 版本：vX.X
+- 模型：GLM 5.3 / Kimi K3
+- 规则文件：`references/xxx.md`，版本 vX.X
 - 输入来源：`corpus/xx.md` 第 N 段 / 临时输入（附原文）
 - 记录编号：cal-YYYYMMDD-NN
 
 ## 1. AI 输出版
 
-> （用当前 SKILL.md 生成的改写结果，原样粘贴）
+> （用当前模型的规则文件生成的改写结果，原样粘贴）
 
 ## 2. ASR 转写版
 
@@ -22,6 +23,6 @@
 ## 4. 本轮结论
 
 - 差异率：改动 __ 处 / 共 __ 句 = __%
-- 提炼出的规则改动：（对应写入 SKILL.md 第 X 节）
+- 提炼出的规则改动：（对应写入该模型规则文件第 X 节）
 - 新增负样本：regression/cases/NNN（或"无"）
 - CHANGELOG 条目：已追加 / 未追加
