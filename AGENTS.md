@@ -22,7 +22,8 @@
 | 负样本（bad case） | `regression/cases/NNN-简短描述.md` | 按 `regression/TEMPLATE.md` |
 | 回归结果归档 | `regression/results/YYYYMMDD-模型-版本.md` | 按 `regression/results/TEMPLATE.md`，执行规程见 `regression/RUNBOOK.md` |
 | 差异率汇总 | `calibration/metrics.md` | 追加一行，数值与当轮校准记录一致 |
-| A/B 盲测记录 | `ab-tests/YYYYMMDD-NN.md` | 按 `ab-tests/TEMPLATE.md` |
+| A/B 盲测记录 | `ab-tests/YYYYMMDD-NN.md` | 按 `ab-tests/TEMPLATE.md`，执行规程见 `ab-tests/RUNBOOK.md` |
+| A/B 盲测汇总 | `ab-tests/summary.md` | 追加一行，累计胜率看趋势 |
 | 新的测试输入 | `corpus/` 对应题材文件 | 追加到文件末尾，标注来源 |
 
 - 编号 `NN`/`NNN` 从现有最大编号递增，不允许跳号或复用。
