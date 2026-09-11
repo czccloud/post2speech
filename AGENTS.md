@@ -20,6 +20,8 @@
 | 规则归因日志 | `CHANGELOG.md` | 按文件头部的条目格式，新条目在最上方 |
 | 每轮校准的完整记录 | `calibration/YYYYMMDD-NN.md` | 按 `calibration/TEMPLATE.md` |
 | 负样本（bad case） | `regression/cases/NNN-简短描述.md` | 按 `regression/TEMPLATE.md` |
+| 回归结果归档 | `regression/results/YYYYMMDD-模型-版本.md` | 按 `regression/results/TEMPLATE.md`，执行规程见 `regression/RUNBOOK.md` |
+| 差异率汇总 | `calibration/metrics.md` | 追加一行，数值与当轮校准记录一致 |
 | A/B 盲测记录 | `ab-tests/YYYYMMDD-NN.md` | 按 `ab-tests/TEMPLATE.md` |
 | 新的测试输入 | `corpus/` 对应题材文件 | 追加到文件末尾，标注来源 |
 
@@ -39,8 +41,8 @@
 2. 拿到 ASR 转写版后，逐条 diff，按停顿/语气/标点/冗余词/即兴改写五类归因。
 3. 完整记录写入 `calibration/`，提炼的规则改动写入该模型自己的规则文件（不动其他模型的文件），归因写入 `CHANGELOG.md`（注明模型名）。
 4. 本轮新发现的 bad case 存入 `regression/`。
-5. 用当前模型跑 `corpus/` + `regression/` 回归，报告结果；有退化就先修复再收尾。
-6. 统计本轮差异率（改动处数量 / 总句数），追加到校准记录中。
+5. 用当前模型跑 `corpus/` + `regression/` 回归（步骤和判定标准见 `regression/RUNBOOK.md`），结果按 `regression/results/TEMPLATE.md` 归档；有退化就先修复再收尾。
+6. 统计本轮差异率（改动处数量 / 总句数），追加到校准记录中，并在 `calibration/metrics.md` 汇总表加一行。
 
 ## 禁止事项
 
