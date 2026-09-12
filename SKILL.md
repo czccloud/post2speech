@@ -18,7 +18,7 @@ description: 中文表达优化。跟用户对话、汇报进展、讲解概念�
 | 模型 | 规则文件 | 状态 |
 |------|----------|------|
 | GLM 5.3 | `references/glm-5.3.md` | v1.3（2026-09-11 第三轮校准，各轮变更见文件头与 CHANGELOG） |
-| Kimi K3 | `references/kimi-k3.md` | v1.4（2026-09-11，当前活跃迭代版本，各轮变更见文件头与 CHANGELOG） |
+| Kimi K3 | `references/kimi-k3.md` | v1.5（2026-09-11，当前活跃迭代版本，各轮变更见文件头与 CHANGELOG） |
 
 ## 迭代约定（改规则时必读）
 
