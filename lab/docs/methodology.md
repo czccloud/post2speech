@@ -12,7 +12,7 @@ oralizer/
 │   ├── overlays/        # 【运行时】某模型相对 core 的实测差异补丁（有校准佐证才写）
 │   └── legacy/          # 2026-09-16 之前的分模型规则文件，保留不迭代
 ├── profiles/            # 【运行时】个人风格层（句长偏好、口头禅等，几行到几十行）
-├── README.md / README_EN.md / PROMO.md  # 门面
+├── README.md / README_EN.md   # 门面
 ├── AGENTS.md            # AI 参与迭代时必须遵守的守则
 ├── CHANGELOG.md         # 规则归因日志：每条规则从哪次差异来
 └── lab/                 # 【治理区】迭代的日常工作区（2026-09-17 起迁入）

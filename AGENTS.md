@@ -6,7 +6,7 @@
 
 - **运行时区**（装 skill 后被加载，改动必须走完整归因+回归流程）：`SKILL.md`、`references/`、`profiles/`。
 - **治理区 `lab/`**（迭代的日常工作区）：`calibration/`、`corpus/`、`regression/`、`ab-tests/`、`docs/`、`demo/`、`scripts/`，全部在 `lab/` 下。
-- **门面与规矩**（根目录）：`README.md`、`README_EN.md`、`PROMO.md`、`AGENTS.md`、`CHANGELOG.md`。
+- **门面与规矩**（根目录）：`README.md`、`README_EN.md`、`AGENTS.md`、`CHANGELOG.md`。
 - 2026-09-17 起治理目录迁入 `lab/`；此前归档记录中的旧路径（`calibration/`、`corpus/`、`regression/` 等无前缀形式）一律对应 `lab/` 下同名目录。
 
 ## 核心铁律
