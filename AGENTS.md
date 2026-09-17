@@ -1,6 +1,6 @@
 # AGENTS.md — AI 迭代守则
 
-本仓库迭代一个口语化改写 Skill：`SKILL.md` 是入口，规则主体是 `references/core.md`（通用，所有模型共享）；某模型相对 core 的实测差异写在 `references/overlays/<model>.md`；2026-09-16 之前的分模型规则文件保留在 `references/legacy/`，不再迭代。任何 AI 参与本仓库的工作时，必须遵守以下守则。方法论详见 `README.md`，本文件是唯一的行为准则来源。
+本仓库迭代一个口语化改写 Skill：`SKILL.md` 是入口，规则主体是 `references/core.md`（通用，所有模型共享）；某模型相对 core 的实测差异写在 `references/overlays/<model>.md`；2026-09-16 之前的分模型规则文件保留在 `references/legacy/`，不再迭代。任何 AI 参与本仓库的工作时，必须遵守以下守则。方法论详见 `docs/methodology.md`，本文件是唯一的行为准则来源。
 
 ## 核心铁律
 
