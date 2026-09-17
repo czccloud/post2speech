@@ -1,0 +1,12 @@
+# API key 绝不进仓库（key 统一放在项目目录的上一级）
+.env
+.env.local
+keys/
+
+# TTS 生成的音频默认不提交，demo/ 下的对比样本除外
+*.mp3
+!demo/*.mp3
+
+# Python
+__pycache__/
+*.pyc
