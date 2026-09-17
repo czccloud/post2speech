@@ -20,11 +20,15 @@ npx skills add leaveWhite9088/oralizer --global
 
 同一段文字，同一音色同一语速，只有文本不同。先听后看，或者边看边听：
 
-**A · 原始书面语**（[▶ 听音频](lab/demo/A-原始书面语.mp3)）
+**A · 原始书面语**（[下载 mp3](lab/demo/A-原始书面语.mp3)）
+
+<video src="https://raw.githubusercontent.com/leaveWhite9088/oralizer/main/assets/A-%E5%8E%9F%E5%A7%8B%E4%B9%A6%E9%9D%A2%E8%AF%AD.mp4" controls></video>
 
 > 在数字化转型的浪潮中，知识管理工具已成为现代人不可或缺的效率利器。然而值得注意的是，大多数用户仅仅使用了这些工具不到百分之十的功能。本文将深入探讨如何充分发挥知识管理工具的潜力，首先介绍核心理念，其次讲解实践方法，最后给出行动建议，希望能帮助你构建属于自己的第二大脑。
 
-**B · oralizer 改写后**（[▶ 听音频](lab/demo/B-oralizer输出.mp3)）
+**B · oralizer 改写后**（[下载 mp3](lab/demo/B-oralizer输出.mp3)）
+
+<video src="https://raw.githubusercontent.com/leaveWhite9088/oralizer/main/assets/B-oralizer%E8%BE%93%E5%87%BA.mp4" controls></video>
 
 > 知识管理工具现在基本人手一个，但大多数人用它，用到的功能连 10% 都不到。那怎么才能把它的潜力用出来呢？这篇分三块来讲，核心理念，实践方法，还有几条能直接照做的建议，目标就是帮你搭一个自己的第二大脑。第二大脑听着玄，说白了就是在脑子外面，再给自己攒一个知识库。
 
