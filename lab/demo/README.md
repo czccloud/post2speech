@@ -6,7 +6,7 @@
 |------|------|
 | `A-原始书面语.mp3` | `A-原始书面语.txt` 直接喂 TTS |
 | `B-oralizer输出.mp3` | `B-oralizer输出.txt`（经 `references/core.md` 规则改写）喂 TTS |
-| `C-真人朗读.mp3` | 真人自然朗读 B 的录音（可选但强烈建议），配 `C-真人朗读-ASR转写.txt` 作为 ground truth 实物证据 |
+| `C-真人朗读.mp3` | 真人自然朗读 B 的语音转文字稿（可选但强烈建议），存为 `C-真人朗读-转写.txt` 作为 ground truth 实物证据 |
 
 ## 重新生成
 
@@ -21,4 +21,4 @@ python lab/scripts/tts.py "lab/demo/A-原始书面语.txt" -o "lab/demo/A-原始
 python lab/scripts/tts.py "lab/demo/B-oralizer输出.txt" -o "lab/demo/B-oralizer输出.mp3" --voice oralizer-owner
 ```
 
-C 段需要人参与：自然朗读 B 文本并录音（允许即兴修改，改得顺嘴就是对），录音转 mp3 后放入本目录；若做了 ASR 转写，把转写稿存为 `C-真人朗读-ASR转写.txt`，它可以直接作为一轮校准的输入（见 `AGENTS.md` 迭代流程）。
+C 段需要人参与：打开手机语音转文字，自然朗读 B 文本让它实时转写（允许即兴修改，改得顺嘴就是对），转写稿存为 `C-真人朗读-转写.txt` 放入本目录——它可以直接作为一轮校准的输入（见 `AGENTS.md` 迭代流程）。愿意同时录音更好，不强制。

@@ -33,13 +33,13 @@ The skill itself is pure Markdown and needs no API key. `lab/scripts/tts.py` is 
 
 ## Why it works
 
-The rules aren't invented — they're **calibrated against real human read-aloud recordings**: AI rewrites a passage → a human reads it aloud naturally (recording) → ASR transcribes what's actually said → every diff between "what the AI wrote" and "what the human said" is attributed to a missing rule. Each rule traces back to a real recorded difference (see [CHANGELOG.md](CHANGELOG.md) and [lab/calibration/](lab/calibration/)). The ASR transcript is an external objective anchor — not "an AI judging another AI". Full methodology: [lab/docs/methodology.md](lab/docs/methodology.md).
+The rules aren't invented — they're **calibrated against real human read-aloud recordings**: AI rewrites a passage → a human reads it aloud naturally while phone speech-to-text captures what's actually said → every diff between "what the AI wrote" and "what the human said" is attributed to a missing rule. Each rule traces back to a real recorded difference (see [CHANGELOG.md](CHANGELOG.md) and [lab/calibration/](lab/calibration/)). The ASR transcript is an external objective anchor — not "an AI judging another AI". Full methodology: [lab/docs/methodology.md](lab/docs/methodology.md).
 
 Most "de-AI" tools target English fingerprints (em dashes, triads) and validate with LLM self-review. Chinese AI-flavored writing is a different beast, and oralizer is built for it.
 
 ## Personalization
 
-Shared rules live in `references/core.md`. Personal preferences (sentence length, verbal tics, pause rhythm, number style) go in `profiles/<name>.md` — a few lines to a few dozen. Start from [profiles/default.md](profiles/default.md). The best calibration input is an ASR transcript of *your own* read-aloud: it captures how you actually speak, not how you write.
+Shared rules live in `references/core.md`. Personal preferences (sentence length, verbal tics, pause rhythm, number style) go in `profiles/<name>.md` — a few lines to a few dozen. Start from [profiles/default.md](profiles/default.md). The best calibration input is a speech-to-text transcript of *your own* read-aloud (just read into your phone's voice input): it captures how you actually speak, not how you write.
 
 ## Contributing
 

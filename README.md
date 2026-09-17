@@ -40,13 +40,13 @@ npx skills add leaveWhite9088/oralizer --global
 
 ## 为什么它有效
 
-规则不是拍脑袋写的，是拿真人朗读**校准**出来的：AI 改写 → 真人自然朗读并录音 → ASR 转写 → 逐条对比"AI 写的 vs 人实际读的" → 把差异归因成规则。每条规则都能追溯到一次真实差异（见 [CHANGELOG.md](CHANGELOG.md) 和 [lab/calibration/](lab/calibration/)）。ASR 转写稿是外部客观锚点，不是"用 AI 审 AI"。完整的校准循环、测试方法和收敛标准见 [lab/docs/methodology.md](lab/docs/methodology.md)。
+规则不是拍脑袋写的，是拿真人朗读**校准**出来的：AI 改写 → 真人自然朗读、用手机语音转文字记下实际读出来的样子 → 逐条对比"AI 写的 vs 人实际读的" → 把差异归因成规则。每条规则都能追溯到一次真实差异（见 [CHANGELOG.md](CHANGELOG.md) 和 [lab/calibration/](lab/calibration/)）。ASR 转写稿是外部客观锚点，不是"用 AI 审 AI"。完整的校准循环、测试方法和收敛标准见 [lab/docs/methodology.md](lab/docs/methodology.md)。
 
 ## 定制你自己的 profile
 
 共性规则在 `references/core.md`，所有人共享；个人偏好（句长、口头禅、停顿节奏、数字写法）放在 `profiles/<name>.md`，几行到几十行就够。从 [profiles/default.md](profiles/default.md) 复制一份改起。
 
-想让自己的 profile 真正贴合你的嘴，最准的输入是**一段你自己朗读的 ASR 转写稿**：随便挑一段文字自然朗读录音，转写后和你的原文对比，你顺口改掉的地方就是你的个人口语特征，写进 profile。这比给文字样本更准——文字样本只能看出你怎么写，ASR 稿能看出你怎么说。
+想让自己的 profile 真正贴合你的嘴，最准的输入是**一段你自己朗读的语音转文字稿**：随便挑一段文字，打开手机便签或输入法的语音输入，自然地读出来让它实时转写，再和你的原文对比，你顺口改掉的地方就是你的个人口语特征，写进 profile。这比给文字样本更准——文字样本只能看出你怎么写，转写稿能看出你怎么说。
 
 ## 如何贡献
 
