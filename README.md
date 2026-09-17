@@ -88,7 +88,6 @@ post2speech/
 | 题材覆盖测试 | 每版规则文件都在 `corpus/` 的固定输入上跑一遍 | 防止某类题材退化 |
 | 负样本回归 | 每版都跑 `regression/` 全部用例，执行规程见 `regression/RUNBOOK.md`，结果归档到 `regression/results/` | 防止旧问题复发 |
 | 差异率指标 | 统计 ASR 朗读版与 AI 原文的编辑距离/改动处数量，逐轮汇总到 `calibration/metrics.md` | 用数字看收敛，不靠感觉 |
-| LLM 评委 | 用另一个 AI 按"口语化程度/停顿合理性/有无书面腔"打分，提示词见 `regression/llm-judge.md` | 快速筛出明显退步（不能替代耳朵） |
 | TTS 端到端 | 把输出喂给 TTS 引擎听效果 | 最接近真实使用场景；TTS 读不顺的地方就是 Skill 的测试信号 |
 
 ## 收敛标准

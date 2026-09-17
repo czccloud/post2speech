@@ -8,4 +8,4 @@
 
 ## 怎么跑回归
 
-执行步骤和判定标准见 `RUNBOOK.md`；每次回归的结果按 `results/TEMPLATE.md` 归档到 `results/`，不允许只口头报告。回归中产出的改写结果量大、人耳听不过来时，可用 `llm-judge.md` 的提示词先机器快筛（只能用于筛查，不能作为通过依据）。
+执行步骤和判定标准见 `RUNBOOK.md`；每次回归的结果按 `results/TEMPLATE.md` 归档到 `results/`，不允许只口头报告。
