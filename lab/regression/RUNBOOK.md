@@ -1,6 +1,6 @@
 # RUNBOOK — 测试执行规程
 
-每次修改 `references/` 下任一规则文件（`core.md` 或 `overlays/` 下文件）后，以及在宣称一轮迭代收敛之前，必须按本规程完整跑一遍测试，并把结果归档到 `results/`。禁止口头宣称"已通过""已收敛"（对应根目录 `AGENTS.md` 禁止事项第 2 条）。历史用例的「关联规则」字段若指向 `references/kimi-k3.md`、`references/glm-5.3.md` 等旧路径，这些文件已移入 `references/legacy/`，对应条文均已并入 `references/core.md`，判定时按 core.md 中的同编号规则执行。
+每次修改 `references/` 下任一规则文件（`core.md` 或 `overlays/` 下文件）后，以及在宣称一轮迭代收敛之前，必须按本规程完整跑一遍测试，并把结果归档到 `results/`。禁止口头宣称"已通过""已收敛"（对应根目录 `AGENTS.md` 禁止事项第 2 条）。历史用例的「关联规则」字段若指向 `references/kimi-k3.md`、`references/glm-5.3.md` 等旧路径，这些文件已移入 `references/legacy/`，对应条文均已并入 `references/core.md`，判定时按 core.md 中的同编号规则执行。core v1.2（2026-09-17）删除了禁用清单旧第 8、12 条并重新编号（旧 9→8、10→9、11→10、13→11），此前归档的用例与校准记录中的禁用清单编号一律按旧号理解，映射见 CHANGELOG 2026-09-17 core v1.2 条目；通用硬规则与口语规则编号未动。
 
 ## 触发时机
 
