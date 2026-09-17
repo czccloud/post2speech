@@ -2,7 +2,7 @@
 
 - 日期：YYYY-MM-DD
 - 模型：GLM 5.3 / Kimi K3
-- 规则文件：`references/xxx.md`，版本 vX.X
+- 规则文件：`references/core.md`（或叠加的 overlay），版本 vX.X
 - 触发变更：CHANGELOG.md 对应条目（日期 + 摘要）
 - 执行人：AI / 人
 

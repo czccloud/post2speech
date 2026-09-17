@@ -1,6 +1,6 @@
 # regression/ — 负样本库
 
-存放"AI 写得不口语"的典型 bad case。每改一版模型规则文件，把这里的用例全部跑一遍回归，防止修新问题改坏旧场景（见根目录 `README.md`）。
+存放"AI 写得不口语"的典型 bad case。每改一版规则文件（`references/core.md` 或 overlay），把这里的用例全部跑一遍回归，防止修新问题改坏旧场景（见根目录 `README.md`）。
 
 - 用例放在 `cases/` 下，命名：`NNN-简短描述.md`（NNN 从 001 递增，不跳号不复用）
 - 内容格式：按 `TEMPLATE.md` 填写
