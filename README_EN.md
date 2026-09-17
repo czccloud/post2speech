@@ -20,8 +20,8 @@ Or manually: `git clone https://github.com/leaveWhite9088/oralizer` into your ag
 
 Same passage, same TTS voice and speed — only the text differs:
 
-- **A · Original written Chinese** — [▶ listen](demo/A-原始书面语.mp3) ([text](demo/A-原始书面语.txt))
-- **B · Rewritten by oralizer** — [▶ listen](demo/B-oralizer输出.mp3) ([text](demo/B-oralizer输出.txt))
+- **A · Original written Chinese** — [▶ listen](lab/demo/A-原始书面语.mp3) ([text](lab/demo/A-原始书面语.txt))
+- **B · Rewritten by oralizer** — [▶ listen](lab/demo/B-oralizer输出.mp3) ([text](lab/demo/B-oralizer输出.txt))
 
 ## Usage
 
@@ -29,11 +29,11 @@ Same passage, same TTS voice and speed — only the text differs:
 /oralizer rewrite this article into a speakable script: <paste text>
 ```
 
-The skill itself is pure Markdown and needs no API key. `scripts/tts.py` is an optional helper (MiniMax TTS) for generating samples and quick screening — it is not in the skill's dependency chain.
+The skill itself is pure Markdown and needs no API key. `lab/scripts/tts.py` is an optional helper (MiniMax TTS) for generating samples and quick screening — it is not in the skill's dependency chain.
 
 ## Why it works
 
-The rules aren't invented — they're **calibrated against real human read-aloud recordings**: AI rewrites a passage → a human reads it aloud naturally (recording) → ASR transcribes what's actually said → every diff between "what the AI wrote" and "what the human said" is attributed to a missing rule. Each rule traces back to a real recorded difference (see [CHANGELOG.md](CHANGELOG.md) and [calibration/](calibration/)). The ASR transcript is an external objective anchor — not "an AI judging another AI". Full methodology: [docs/methodology.md](docs/methodology.md).
+The rules aren't invented — they're **calibrated against real human read-aloud recordings**: AI rewrites a passage → a human reads it aloud naturally (recording) → ASR transcribes what's actually said → every diff between "what the AI wrote" and "what the human said" is attributed to a missing rule. Each rule traces back to a real recorded difference (see [CHANGELOG.md](CHANGELOG.md) and [lab/calibration/](lab/calibration/)). The ASR transcript is an external objective anchor — not "an AI judging another AI". Full methodology: [lab/docs/methodology.md](lab/docs/methodology.md).
 
 Most "de-AI" tools target English fingerprints (em dashes, triads) and validate with LLM self-review. Chinese AI-flavored writing is a different beast, and oralizer is built for it.
 
@@ -46,7 +46,7 @@ Shared rules live in `references/core.md`. Personal preferences (sentence length
 Calibration data is what we need most:
 
 1. Install the skill, rewrite your content, and file issues with sentences that still read awkwardly aloud;
-2. Run one calibration round (read aloud + ASR + diff) and submit per `calibration/TEMPLATE.md`;
+2. Run one calibration round (read aloud + ASR + diff) and submit per `lab/calibration/TEMPLATE.md`;
 3. Every rule change must trace to a real recorded difference — see `AGENTS.md`.
 
 Currently v0.x, under continuous calibration.

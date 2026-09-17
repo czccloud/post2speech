@@ -3,7 +3,7 @@
 - 日期：YYYY-MM-DD
 - 模型：校准时用的模型（如 GLM 5.3 / Kimi K3）
 - 规则文件：`references/core.md`（或叠加的 overlay），版本 vX.X
-- 输入来源：`corpus/xx.md` 第 N 段 / 临时输入（附原文）
+- 输入来源：`lab/corpus/xx.md` 第 N 段 / 临时输入（附原文）
 - 记录编号：cal-YYYYMMDD-NN
 
 ## 1. AI 输出版
@@ -24,5 +24,5 @@
 
 - 差异率：改动 __ 处 / 共 __ 句 = __%
 - 提炼出的规则改动：（对应写入 `references/core.md` 或 overlay 第 X 节）
-- 新增负样本：regression/cases/NNN（或"无"）
+- 新增负样本：lab/regression/cases/NNN（或"无"）
 - CHANGELOG 条目：已追加 / 未追加

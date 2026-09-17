@@ -3,9 +3,9 @@
 .env.local
 keys/
 
-# TTS 生成的音频默认不提交，demo/ 下的对比样本除外
+# TTS 生成的音频默认不提交，lab/demo/ 下的对比样本除外
 *.mp3
-!demo/*.mp3
+!lab/demo/*.mp3
 
 # Python
 __pycache__/

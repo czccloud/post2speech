@@ -2,7 +2,7 @@
 
 - 日期：YYYY-MM-DD
 - 测试目的：验证哪次规则变更（对应 CHANGELOG 条目）
-- 输入来源：`corpus/xx.md` 第 N 段 / 临时输入（附原文）
+- 输入来源：`lab/corpus/xx.md` 第 N 段 / 临时输入（附原文）
 - 对比版本：版本甲 = SKILL vX.X（变更前）；版本乙 = SKILL vX.Y（变更后）
 - A/B 分配：A = 甲 / 乙（揭晓前对盲测人保密）；B = 甲 / 乙
 

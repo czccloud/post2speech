@@ -10,11 +10,11 @@
 
 | 题材文件 | 段落数 | 结论 | 说明 |
 |----------|--------|------|------|
-| corpus/tech.md | | 无退化 / 有退化 | （有退化时附具体句子） |
-| corpus/story.md | | | |
-| corpus/opinion.md | | | |
-| corpus/news.md | | | |
-| corpus/guide.md | | | |
+| lab/corpus/tech.md | | 无退化 / 有退化 | （有退化时附具体句子） |
+| lab/corpus/story.md | | | |
+| lab/corpus/opinion.md | | | |
+| lab/corpus/news.md | | | |
+| lab/corpus/guide.md | | | |
 
 ## 2. regression 逐用例判定
 
@@ -28,7 +28,7 @@
 ## 3. 差异率参照
 
 - 最近一次校准：cal-YYYYMMDD-NN，差异率 __%
-- 本轮是否新增校准数据：是（已追加 calibration/metrics.md）/ 否
+- 本轮是否新增校准数据：是（已追加 lab/calibration/metrics.md）/ 否
 
 ## 4. 结论
 

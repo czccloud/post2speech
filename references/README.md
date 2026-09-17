@@ -16,7 +16,7 @@
 
 legacy/ 不是待清理的旧文件，是"可追溯"这条核心原则的实物证据：
 
-1. **归档记录的引用还活着**。`calibration/`、`regression/cases/`、`ab-tests/` 里有几十处引用写着 `references/kimi-k3.md` 第 X 条、`references/glm-5.3.md` v1.3——这些是历史事实，按 `AGENTS.md` 不许改。legacy/ 在，这些引用就查得到原文；删了只剩 CHANGELOG 的转述。
+1. **归档记录的引用还活着**。`lab/calibration/`、`lab/regression/cases/`、`lab/ab-tests/` 里有几十处引用写着 `references/kimi-k3.md` 第 X 条、`references/glm-5.3.md` v1.3——这些是历史事实，按 `AGENTS.md` 不许改。legacy/ 在，这些引用就查得到原文；删了只剩 CHANGELOG 的转述。
 2. **core.md 的来源凭证**。core.md 头部声明由 legacy 两个版本机械合并而来，合并是否忠实靠 legacy 可对照。
 3. **overlay 的判据基线**。将来做"同一份 core 喂多个模型"的对比实验时，legacy 是现成的对照组。
 
@@ -24,4 +24,4 @@ legacy/ 不是待清理的旧文件，是"可追溯"这条核心原则的实物�
 
 ## 修改规则时
 
-流程与守则见根目录 `AGENTS.md`，要点：规则只能来自"AI 输出 vs 真人朗读 ASR 转写"的真实差异；改动默认只进 `core.md`；同一轮必须在 `CHANGELOG.md` 记归因日志；改完按 `regression/RUNBOOK.md` 跑回归。
+流程与守则见根目录 `AGENTS.md`，要点：规则只能来自"AI 输出 vs 真人朗读 ASR 转写"的真实差异；改动默认只进 `core.md`；同一轮必须在 `CHANGELOG.md` 记归因日志；改完按 `lab/regression/RUNBOOK.md` 跑回归。

@@ -2,12 +2,12 @@
 """MiniMax TTS 命令行工具：把文本转成中文语音 mp3。
 
 用法：
-    python scripts/tts.py input.txt -o out.mp3
-    python scripts/tts.py input.txt -o out.mp3 --model speech-2.8-hd --voice male-qn-qingse --speed 1.0
-    python scripts/tts.py demo/*.txt -o demo/          # 批量，输出目录
+    python lab/scripts/tts.py input.txt -o out.mp3
+    python lab/scripts/tts.py input.txt -o out.mp3 --model speech-2.8-hd --voice male-qn-qingse --speed 1.0
+    python lab/scripts/tts.py lab/demo/*.txt -o lab/demo/   # 批量，输出目录
 
-Key 读取顺序：环境变量 MINIMAX_API_KEY → ../.env → ../.env.local → ../keys/minimax.env
-（key 放在项目目录的上一级，不进仓库。）
+Key 读取顺序：环境变量 MINIMAX_API_KEY → <仓库上一级>/.env → .env.local → keys/minimax.env
+（key 放在仓库目录的上一级，不进仓库。）
 
 注意：本脚本只是辅助工具（生成样本、快速筛查），不在 skill 的依赖链上；
 Skill 本身是纯 Markdown，不需要任何 key。
@@ -38,9 +38,9 @@ def find_api_key():
     key = os.environ.get("MINIMAX_API_KEY")
     if key:
         return key.strip(), "环境变量 MINIMAX_API_KEY"
+    # 脚本位于 <repo>/lab/scripts/，key 在仓库目录的上一级
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_dir = os.path.dirname(script_dir)
-    parent_dir = os.path.dirname(project_dir)
+    parent_dir = os.path.dirname(os.path.dirname(os.path.dirname(script_dir)))
     for rel in (".env", ".env.local", os.path.join("keys", "minimax.env")):
         path = os.path.join(parent_dir, rel)
         if not os.path.isfile(path):

@@ -85,7 +85,7 @@ def main():
         sys.exit(f"克隆失败 [{base_resp.get('status_code')}] {base_resp.get('status_msg')}")
 
     print(f"克隆完成。voice_id：{args.voice_id}")
-    print(f"试听：python scripts/tts.py demo/B-oralizer输出.txt -o /tmp/test.mp3 --voice {args.voice_id}")
+    print(f"试听：python lab/scripts/tts.py lab/demo/B-oralizer输出.txt -o /tmp/test.mp3 --voice {args.voice_id}")
 
 
 if __name__ == "__main__":

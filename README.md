@@ -20,11 +20,11 @@ npx skills add leaveWhite9088/oralizer --global
 
 同一段文字，同一音色同一语速，只有文本不同。先听后看，或者边看边听：
 
-**A · 原始书面语**（[▶ 听音频](demo/A-原始书面语.mp3)）
+**A · 原始书面语**（[▶ 听音频](lab/demo/A-原始书面语.mp3)）
 
 > 在数字化转型的浪潮中，知识管理工具已成为现代人不可或缺的效率利器。然而值得注意的是，大多数用户仅仅使用了这些工具不到百分之十的功能。本文将深入探讨如何充分发挥知识管理工具的潜力，首先介绍核心理念，其次讲解实践方法，最后给出行动建议，希望能帮助你构建属于自己的第二大脑。
 
-**B · oralizer 改写后**（[▶ 听音频](demo/B-oralizer输出.mp3)）
+**B · oralizer 改写后**（[▶ 听音频](lab/demo/B-oralizer输出.mp3)）
 
 > 知识管理工具现在基本人手一个，但大多数人用它，用到的功能连 10% 都不到。那怎么才能把它的潜力用出来呢？这篇分三块来讲，核心理念，实践方法，还有几条能直接照做的建议，目标就是帮你搭一个自己的第二大脑。第二大脑听着玄，说白了就是在脑子外面，再给自己攒一个知识库。
 
@@ -36,11 +36,11 @@ npx skills add leaveWhite9088/oralizer --global
 /oralizer 把这篇文章改写成适合朗读的口播稿：<粘贴文本>
 ```
 
- Skill 零依赖、不需要任何 API key。`scripts/tts.py` 是可选的辅助工具（用 MiniMax TTS 把文本转成音频，生成样本、快速筛查用），不在 Skill 依赖链上；key 放在项目目录的上一级（`../.env`），详见 [demo/README.md](demo/README.md)。
+ Skill 零依赖、不需要任何 API key。`lab/scripts/tts.py` 是可选的辅助工具（用 MiniMax TTS 把文本转成音频，生成样本、快速筛查用），不在 Skill 依赖链上；key 放在项目目录的上一级（`../.env`），详见 [lab/demo/README.md](lab/demo/README.md)。
 
 ## 为什么它有效
 
-规则不是拍脑袋写的，是拿真人朗读**校准**出来的：AI 改写 → 真人自然朗读并录音 → ASR 转写 → 逐条对比"AI 写的 vs 人实际读的" → 把差异归因成规则。每条规则都能追溯到一次真实差异（见 [CHANGELOG.md](CHANGELOG.md) 和 [calibration/](calibration/)）。ASR 转写稿是外部客观锚点，不是"用 AI 审 AI"。完整的校准循环、测试方法和收敛标准见 [docs/methodology.md](docs/methodology.md)。
+规则不是拍脑袋写的，是拿真人朗读**校准**出来的：AI 改写 → 真人自然朗读并录音 → ASR 转写 → 逐条对比"AI 写的 vs 人实际读的" → 把差异归因成规则。每条规则都能追溯到一次真实差异（见 [CHANGELOG.md](CHANGELOG.md) 和 [lab/calibration/](lab/calibration/)）。ASR 转写稿是外部客观锚点，不是"用 AI 审 AI"。完整的校准循环、测试方法和收敛标准见 [lab/docs/methodology.md](lab/docs/methodology.md)。
 
 ## 定制你自己的 profile
 
@@ -53,7 +53,7 @@ npx skills add leaveWhite9088/oralizer --global
 最缺的不是代码，是校准数据。你可以：
 
 1. 装上 Skill，用它改写你的内容，把"读着还是别扭"的句子发成 issue；
-2. 按[校准循环](docs/methodology.md)跑一轮（朗读 + ASR + diff），把记录按 `calibration/TEMPLATE.md` 提交；
+2. 按[校准循环](lab/docs/methodology.md)跑一轮（朗读 + ASR + diff），把记录按 `lab/calibration/TEMPLATE.md` 提交；
 3. 提交的规则改动必须能追溯到真实差异，详见 `AGENTS.md` 的守则。
 
 当前为 v0.x，持续校准中——规则每天都在变厚，欢迎来玩。
