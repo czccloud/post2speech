@@ -7,10 +7,14 @@
 ## 安装
 
 ```bash
+# 装到当前项目（团队共享、跟着项目走）
+npx skills add leaveWhite9088/oralizer
+
+# 或装到全局（所有项目都能用）
 npx skills add leaveWhite9088/oralizer --global
 ```
 
-也可以手动安装：`git clone https://github.com/leaveWhite9088/oralizer` 到你的 agent 的 skills 目录。
+也可以手动安装：`git clone https://github.com/leaveWhite9088/oralizer` 到你的 agent 的 skills 目录（项目级 `.agents/skills/` 或全局 `~/.agents/skills/`）。
 
 ## 听一下差别
 

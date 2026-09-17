@@ -7,10 +7,14 @@
 ## Install
 
 ```bash
+# Into the current project (shared with the team, travels with the repo)
+npx skills add leaveWhite9088/oralizer
+
+# Or globally (available in every project)
 npx skills add leaveWhite9088/oralizer --global
 ```
 
-Or manually: `git clone https://github.com/leaveWhite9088/oralizer` into your agent's skills directory.
+Or manually: `git clone https://github.com/leaveWhite9088/oralizer` into your agent's skills directory (project-level `.agents/skills/` or global `~/.agents/skills/`).
 
 ## Hear the difference
 
