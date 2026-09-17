@@ -20,7 +20,7 @@ npx skills add leaveWhite9088/oralizer --global
 
 同一段文字，同一音色同一语速，只有文本不同。先听后看，或者边看边听：
 
-**A · 原始书面语**（[下载 mp3](lab/demo/A-原始书面语.mp3)）
+**A · 原始书面语**
 
 
 
@@ -30,7 +30,7 @@ https://github.com/user-attachments/assets/e14cf8aa-4bf2-4545-8a4c-8bedea4720f7
 
 > 在数字化转型的浪潮中，知识管理工具已成为现代人不可或缺的效率利器。然而值得注意的是，大多数用户仅仅使用了这些工具不到百分之十的功能。本文将深入探讨如何充分发挥知识管理工具的潜力，首先介绍核心理念，其次讲解实践方法，最后给出行动建议，希望能帮助你构建属于自己的第二大脑。
 
-**B · oralizer 改写后**（[下载 mp3](lab/demo/B-oralizer输出.mp3)）
+**B · oralizer 改写后**
 
 
 

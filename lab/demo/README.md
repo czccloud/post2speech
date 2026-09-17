@@ -8,6 +8,8 @@
 | `B-oralizer输出.mp3` | `B-oralizer输出.txt`（经 `references/core.md` 规则改写）喂 TTS |
 | `C-真人朗读.mp3` | 真人自然朗读 B 的语音转文字稿（可选但强烈建议），存为 `C-真人朗读-转写.txt` 作为 ground truth 实物证据 |
 
+同名 `.mp4` 是对应 mp3 的无画面版（`ffmpeg -i 原音频 -c:a aac -b:a 128k -vn`），用途是 GitHub README 内嵌播放——GitHub 清洗 `<audio>` 但放行 `<video>`。README 实际引用的是网页端拖拽上传生成的 user-attachments 链接，这里的 mp4 是源文件备份。
+
 ## 重新生成
 
 音频不进 git 默认忽略列表（`lab/demo/*.mp3` 已放行提交）。生成方式：
